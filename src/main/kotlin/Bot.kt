@@ -1,3 +1,4 @@
+import script.BirthdayScript
 import script.HomeScript
 import script.TestScript
 import servicelocator.ServiceLocator.config
@@ -13,5 +14,6 @@ fun main() {
     SlackBot.start {
         addScript(HomeScript())
         addScript(TestScript())
+        addScript(BirthdayScript())
     }
 }
